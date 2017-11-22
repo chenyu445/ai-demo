@@ -81,7 +81,7 @@ export default {
 				}
 			}
 			this.loading = true
-			axios.post('/api_v1/face_verifcation',{image_names:selectedImgList}).then(function(e){
+			axios.post('/ai/api_v1/face_verifcation',{image_names:selectedImgList}).then(function(e){
 				console.log(e)				
 				if(e.data.status == 1){
 					that.resultImgs = e.data.data.check

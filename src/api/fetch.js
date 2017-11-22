@@ -3,8 +3,7 @@ import Cookies from 'js-cookie'
 import { Message } from 'element-ui'
 
 // 创建axios实例
-const service = axios.create({
-  baseURL: 'http://10.10.59.42:8004/api/', // api的base_url
+const service = axios.create({  
   timeout: 10000                  // 请求超时时间
 })
 
